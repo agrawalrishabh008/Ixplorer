@@ -15,26 +15,27 @@
 }
 
 * {
-    padding: 0;
+    /* padding: 0; */
     margin: 0;
 }
 
 .calendar {
-    font-family: 'IBM Plex Sans', sans-serif;
-    position: relative;
-    max-width: 400px; /*change as per your design need */
-    min-width: 320px;
-    background: var(--calendar-bg-color);
-    color: var(--calendar-font-color);
-    margin: 20px auto;
-    box-sizing: border-box;
-    overflow: hidden;
-    font-weight: normal;
-    border-radius: var(--calendar-border-radius);
+  font-family: 'IBM Plex Sans', sans-serif;
+  position: relative;
+  max-width: 70%; /* Maintain the width as per your preference */
+  background: var(--calendar-bg-color);
+  color: var(--calendar-font-color);
+  margin: 20px auto;
+  box-sizing: border-box;
+  overflow: hidden;
+  font-weight: normal;
+  border-radius: var(--calendar-border-radius);
 }
 
 .calendar-inner {
-    padding: 40px 40px;
+  font-family: serif;
+  font-size: medium; /* Reduce the font size */
+  padding: 10px 100px; /* Adjust the padding to control the height */
 }
 
 .calendar .calendar-inner .calendar-body {
@@ -87,7 +88,7 @@
     text-align: center;
     cursor: pointer;
     /* margin: 3px 0px; */
-    background: #407793;
+    background: #5bb1dd;
     padding: 8px 0px;
     border-radius: 10px;
     width: 80%;
@@ -166,18 +167,18 @@ body {
   .personal-home-page {
     display: flex;
     justify-content: space-between;
-    gap: 20px;
-    margin: 20px;
+    /* gap: 20px; */
+    /* margin: 20px; */
   }
   
-  .news-box {
+  /* .news-box {
     background-color: #fff;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     display: flex;
     overflow: hidden;
     max-width: 100%;
-  }
+  } */
   
   .content {
     padding: 20px;
@@ -202,8 +203,8 @@ body {
     display: flex;
     flex-direction: column; /* Stack boxes vertically */
     justify-content: space-between;
-    margin: 15px;
-    margin-right: 60px;
+    
+    margin-right: 150px;
     height: auto;
 }
 
@@ -211,7 +212,7 @@ body {
     background-color: #6fb9ffc5; /* Light blue */
     border-radius: 10px;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
-    padding: 10px;
+    padding: 40px;
     color: white;
     display: flex;
     flex-direction: column; /* Reposition content to the Y-axis */
@@ -360,7 +361,7 @@ body {
     border-radius: 50px; /* To make it a square */
   }
   .contact-box {
-    width: 500px;
+    width: 400px;
     height: 350px;
     padding: 20px;
     border-radius: 30px;
@@ -388,13 +389,31 @@ body {
     transform: translateX(-50%);
     white-space: nowrap;
   } */
-  .info-box-content:hover {
-    background-color: #403c3cb0;
-    
+  /* .info-box-content:hover {
+    background-color: #bdd2dc;
+    border-radius: 10px;
+    padding: 40px;
     transition: background-color 0.3s, color 0.3s, text-decoration 0.3s;
     cursor: pointer;
-  }
+  } */
 
   .info-box-content:hover .info-box-text {
-    color: rgba(20, 216, 206, 0.765)
+    color: rgba(0, 0, 0, 0.765)
   }
+/* Add your existing styles here */
+
+.section-box {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding:50px;
+  position: relative;
+  bottom: 40px;
+  top: 100px;
+  text-align: left;
+  margin: 0 auto;
+  max-width: 800px;
+
+}
+
+/* Add additional section-box styles for other sections as needed */
